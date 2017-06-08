@@ -4,8 +4,10 @@ function bubbleSort(arr) {
     return arr
   }
   for (var i = 0; i < arr.length - 1; i++) {
-    if ()
+    if (comparison(arr[i],arr[i+1])){
+      swap(arr, i, i+1)
     }
+
   }
   var largest = arr.pop()
   resultArr = resultArr.concat(bubbleSort(arr))
@@ -22,5 +24,5 @@ function swap(arr, index1, index2) {
 }
 
 function comparison(item1, item2) {
-  return item1 > item2 ? item1 : item2;
+  return item1 > item2
 }
